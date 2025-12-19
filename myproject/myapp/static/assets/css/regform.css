@@ -1,0 +1,68 @@
+/* h1{
+    color:blue;
+}
+    form{
+    width: 600px;
+    padding: 80px;
+    height: 600px;
+    }
+    
+    input{
+        margin: 10px;
+        padding: 3px;
+        border: radius 8px;
+    }
+    .ammu{
+        background-color:pink;font-style:revert;
+    }
+    #page{
+        background-color: azure;font-weight: 300; font-family: Arial, Helvetica, sans-serif;
+    }
+    .sathish{
+        background-color:paleturquoise;font-size: larger;font-style: oblique;
+    }
+    .harini{
+        background-color: aquamarine;font-style: initial;
+    }
+    #note{
+        background-size: 20px;background-color:bisque;font-style: calc();font-size: larger;
+    }
+    h2{
+        background-color: aquamarine;font-size:medium;
+    }
+    .sharmi{
+        text-align: center;background-color: palegreen;font-size:20px;font-style:italic;
+    }
+    h3{
+        background-color: palevioletred;font-style: italic;font-size: larger;
+    }
+    #pen{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;background-position:20px;background-color: chartreuse;
+    }
+    *{
+        background-color: papayawhip;
+    }
+    .ams{
+        background-color:mediumturquoise;font-style: oblique;text-align: center;
+    }
+    h4{
+        background-color: plum;background-position: 26px;font-weight: 200;
+    }
+    
+    
+        
+     */
+     body{
+        background-image:url("../img/regformm.jpg");
+
+    
+        
+         margin: 0;
+         padding: 0;
+     
+        min-height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+     }

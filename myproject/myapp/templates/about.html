@@ -1,0 +1,108 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'assets/css/about.css' %}">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+  </head>
+  <style>
+    #ammu{
+    background-image:url("../static/assets/img/contact.jpg")
+  }
+  
+  </style>
+<!-- <link rel="stylesheet" href="{% static 'assets/css/about.css' %}"> -->
+ <div id="ammu">
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <h1 style="font-style: italic;color: black;">MARS</h1>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">&nbsp;&nbsp;&nbsp;
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="width:350px;"><button class="btn btn-outline-success" type="submit">Search</button>
+      </ul>
+            <i class="fa-solid fa-moon"></i>&nbsp;&nbsp;
+          <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Home</a>
+          <a class="nav-link active" aria-current="page" href="{% url 'forms' %}">Forms</a>
+          <a class="nav-link active" aria-current="page" href="{% url 'about' %}">About</a>
+          <a class="nav-link active" aria-current="page" href="{% url 'contact' %}">Contact</a>  
+           <a class="nav-link active" aria-current="page" href="{% url 'service' %}">Services</a>
+            <a href="{% url 'signin' %}"><button type="button" class="btn btn-outline-primary">Sign in</button></a>&nbsp;&nbsp;
+           <a href="{% url 'signup' %}"><button type="button" class="btn btn-primary btn-sm">Sign up</button></a>&nbsp;&nbsp;
+      <form class="d-flex" role="search">
+      </form>
+    </div>
+  </div>
+</nav>
+ </div><br><br>
+
+<body>
+    <h1 style="color:black; text-align: center;">About</h1>
+    <p>Princess stories in English often feature kind heroines, magical elements like talking animals or enchanted objects, challenges from evil witches or wizards, and themes of bravery, love, and self-discovery, with popular examples including Cinderella (kindness wins), Sleeping Beauty (curse broken by true love's kiss), and tales of princesses seeking purpose, like those learning to share or find their own path beyond royal duty, teaching valuable morals.</p>
+    <p>Stories about princesses and knights are the perfect outlet for kids to widen their horizons and ensure that they immerse themselves into a world of fantastical imaginations. And, what better way to achieve this feat than a collection of short stories of princesses. In this article, we will briefly talk about five short stories, including the tale of the lonesome princess, the princess and the pea, an ordeal of a faithful knight, and much more. All the stories revolve around integrity, honesty, and valor. They help young minds learn a thing or two about living righteous and truthful lives.</p>
+    <p>The short story of the Princess and the Pea was an ideation of Sans Christian Anderson. It was first published in 1835 in Copenhagen, Sweden. Anderson had heard the story during his childhood, and its source material is probably the folk tales of Sweden. It continued to gain popularity to ultimately become a classic. Likewise, we can trace the origin of other short princess stories like The Lonely Princess, the Princess and the Magical Ring, etc, to traditional folk tales. For instance, the tale of the lonesome princess bears great resemblance to the very famous Cinderella, and the Princess and the Faithful Knight has semblance with the Grimms Brothers Sleeping Beauty.</p>
+    <p>The Princess and the Magical Ring – Once upon a time, there lived a princess in Norfolk who found a special ring with magical powers. One of the powers of the ring was that the princess could sing like a magical nightingale. Everything was going well, but one day, an evil cast a spell upon the kingdom and everyone was affected except the princess with the magic. No sun, no rain, no winds blew in the kingdom because of the spell. The princess decided to use her special powers to save her kingdom, and kept singing a beautiful melody for a year. Then, after a year everyone sprung back to life but the princess wilted away in the wind.</p>
+    <p>The Princess and the Pea – The story revolves around a young girl with soiled and muddy clothes who knocks on the door of a queen at night. She says that she is stranded in the storm, and needs help. She also claims to be a real princess, but her disheveled appearance failed to convince the queen. Nevertheless, the benevolent queen decided to take her in but she plan to test the princess by burying a pea under a huge stack of mattresses. She then ordered the princess to sleep on the mattresses. The next day, when the princess woke up she complained that she could not sleep properly as something was gnawing at her while sleeping. At that very moment, the queen embraced the young girl and decided to make her the wife of his son, and the heir to her throne. Why do you ask? Because only a real princess could feel the discomfort through a bed of twenty mattresses.</p>
+</body>
+
+
+<!-- Footer -->
+<footer class="bg-dark text-light pt-5 pb-3">
+  <div class="container">
+    <div class="row">
+
+      <!-- Column 1 -->
+      <div class="col-md-4 mb-4">
+        <h5>Follow Us</h5>
+        <p class="small">
+          We provide high-quality services to help your business grow.
+        </p>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="col-md-4 mb-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="{% url 'index' %}" class="text-light text-decoration-none">Home</a></li>
+          <li><a href="{% url 'service' %}" class="text-light text-decoration-none">Services</a></li>
+          <li><a href="{% url 'about' %}" class="text-light text-decoration-none">About</a></li>
+          <li><a href="{% url 'contact' %}" class="text-light text-decoration-none">Contact</a></li>
+          <li><a href="{% url 'forms' %}" class="text-light text-decoration-none">Forms</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="col-md-4 mb-4">
+        <h5>Contact</h5>
+        <p class="small mb-1">Email: abc@gmail.com</p>
+        <p class="small mb-1">Phone: +1 234 567 890</p>
+        <p class="small">Address: New York, London</p>
+      </div>
+
+    </div>
+
+    <hr class="border-secondary">
+
+    <div class="text-center small">
+      © 2025  Mars Company. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+
+
+  </body>
+
+</html>

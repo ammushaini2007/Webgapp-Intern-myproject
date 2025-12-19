@@ -1,0 +1,181 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars</title>
+</head>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="{% static 'assets/css/service.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+  body{
+    background-image: url("../static/assets/img/service.jpg");
+    background-repeat: repeat;
+
+}
+
+</style>
+    <body>
+      
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <h1 style="font-style: italic;color: black;">MARS</h1>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">&nbsp;&nbsp;&nbsp;
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="width:350px;"><button class="btn btn-outline-success" type="submit">Search</button>
+      </ul>
+      <i class="fa-solid fa-moon"></i>&nbsp;&nbsp;
+          <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Home</a>
+          <a class="nav-link active" aria-current="page" href="{% url 'forms' %}">Forms</a>
+          <a class="nav-link active" aria-current="page" href="{% url 'about' %}">About</a>
+          <a class="nav-link active" aria-current="page" href="{% url 'contact' %}">Contact</a>  
+           <a class="nav-link active" aria-current="page" href="{% url 'service' %}">Services</a>
+            <a href="{% url 'signin' %}"><button type="button" class="btn btn-outline-primary">Sign in</button></a>&nbsp;&nbsp;
+           <a href="{% url 'signup' %}"><button type="button" class="btn btn-primary btn-sm">Sign up</button></a>&nbsp;&nbsp;
+      <form class="d-flex" role="search">
+      </form>
+    </div>
+  </div>
+</nav>
+
+    <h1 style="font-size:xx-large;color: black;text-align:center;font-style:italic;">SERVICES</h1>
+    <h5 style="text-align: center;color: black;font-size: large;font-style: italic;">Home/Services</h5><br><br><br><br><br><br><br><br>
+    <h3 style="font-size:xx-large;color: black;text-align:center;font-style:italic;">Our Services</h3>
+    <h1 style="text-align: center;font-style: italic;">Developing Skills for job</h1>"
+    <div id="amirtha">
+    <div class="row">
+  <div class="col-sm-6 mb-3 mb-sm-0">
+    <div class="card border-0 shadow-none">
+      <div class="card-body">
+      
+        <img src="https://t4.ftcdn.net/jpg/16/03/27/11/360_F_1603271104_QpivyHHOhXppBVNa1p2XIU03UGUgUVIk.jpg" style="height:200px;width:300px;">
+      
+        </div>
+      </div>
+    </div>
+
+  <div class="col-sm-6">
+    <div class="card border-0 shadow-none">
+      <div class="card-body">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw1G2__eNaHy8wkEB5UZRIiXsNBXGcw3Nscw&s"style="height:200px;width:300px;">
+           
+      </div>
+    </div>
+    </div>
+    </div>
+    
+<div class="row">
+  <div class="col-sm-6 mb-3 mb-sm-0">
+    <div class="card border-0 shadow-none">
+      <div class="card-body">
+        <h5 style="font-style:oblique;">Communication skills are the abilities to effectively exchange information, ideas, and feelings through speaking, writing, non-verbal cues, and visuals, involving active listening, clarity, empathy, and tailoring messages to the audience for better understanding, collaboration, and stronger relationships in life and work.</h5> </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-6">
+    <div class="card border-0 shadow-none">
+      <div class="card-body">
+        <h5 style="font-style: oblique;">Coding skills are the ability to write instructions (code) in a programming language for computers to understand and execute, enabling the creation of software, websites, apps, and automated solutions, and involve both technical expertise for building digital tools and solving problems.</h5>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+  
+    <div id="ammu">
+    <div class="row">
+  <div class="col-sm-6 mb-3 mb-sm-0">
+    <div class="card border-0 shadow-none">
+      <div class="card-body">
+      
+        <img src="https://c8.alamy.com/comp/2H257K0/aptitude-test-icon-monochrome-sign-from-creative-learning-collection-creative-aptitude-test-icon-illustration-for-web-design-infographics-and-more-2H257K0.jpg"style="height:200px;width:300px;">
+      </div>
+      </div>
+      </div>
+  
+
+  <div class="col-sm-6">
+    <div class="card border-0 shadow-none">
+      <div class="card-body">
+        <img src="https://s3-ap-south-1.amazonaws.com/static.awfis.com/wp-content/uploads/2017/07/07184649/ProjectManagement.jpg"style="height: 200px;width: 300px;">
+      </div>
+    </div>
+    </div>
+    
+    
+<div class="row">
+  <div class="col-sm-6 mb-3 mb-sm-0">
+    <div class="card border-0 shadow-none">
+      <div class="card-body">
+        <h5 style="font-style:oblique;">An aptitude is a component of a competence to do a certain kind of work at a certain level. Outstanding aptitude can be considered "talent", or "skill". Aptitude is inborn potential to perform certain kinds of activities, whether physical or mental, and whether developed or undeveloped.></h5>
+  </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-6">
+    <div class="card border-0 shadow-none">
+      <div class="card-body">
+        <h5 style="font-style: oblique;">Coding skills are the ability to write instructions (code) in a programming language for computers to understand and execute, enabling the creation of software, websites, apps, and automated solutions, and involve both technical expertise for building digital tools and solving problems.</h5>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<footer class="bg-dark text-light pt-5 pb-3">
+  <div class="container">
+    <div class="row">
+
+      <!-- Column 1 -->
+      <div class="col-md-4 mb-4">
+        <h5>Follow Us</h5>
+        <p class="small">
+          We provide high-quality services to help your business grow.
+        </p>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="col-md-4 mb-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="{% url 'index' %}" class="text-light text-decoration-none">Home</a></li>
+          <li><a href="{% url 'service' %}" class="text-light text-decoration-none">Services</a></li>
+          <li><a href="{% url 'about' %}" class="text-light text-decoration-none">About</a></li>
+          <li><a href="{% url 'contact' %}" class="text-light text-decoration-none">Contact</a></li>
+          <li><a href="{% url 'forms' %}" class="text-light text-decoration-none">Forms</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="col-md-4 mb-4">
+        <h5>Contact</h5>
+        <p class="small mb-1">Email: abc@gmail.com</p>
+        <p class="small mb-1">Phone: +1 234 567 890</p>
+        <p class="small">Address: New York, London</p>
+      </div>
+
+    </div>
+
+    <hr class="border-secondary">
+
+    <div class="text-center small">
+      © 2025  Mars Company. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+
+
+  </body>
+
+</html>
