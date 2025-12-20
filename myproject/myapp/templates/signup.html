@@ -7,16 +7,17 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="{% static 'assets/css/signup.css' %}">
+    <!--<link rel="stylesheet" href="{% static 'assets/css/signup.css' %}">-->
      <style>
-        label{
-            margin-left: 400px;
-            width:200px;
-            display:inline-block;
-        }
-        #ammu{
-    background-image:url("../static/assets/img/contact.jpg")
+        
+  
+  #form{
+    background-color: bisque;
+        
+        width:800px;;
   }
+  
+  
         
     </style>
     <!-- Bootstrap CSS -->
@@ -50,12 +51,12 @@
     </div>
   </div>
 </nav><br><br>
-  </div>
-    
-        <h1 style="color:black;text-align: center;">Sign up </h1>
-
+  </div><br>
+  <center>
     <form id="form">
-        <label>USER NAME</label>
+        <h1 style="color:black;text-align: center;">Sign up </h1>
+    
+        <label  >USER NAME</label>
         <input type="text" id="user name"><br><br><br>
         <label> NAME</label>
         <input type="text" id="user name"><br><br><br>
@@ -63,10 +64,11 @@
         <input type="password" id="password"><br><br><br>
         <label> Confirm Password</label>
         <input type="password" id="password"><br><br><br>
-        <center>
+    
         <button style="background-color:blue;">Register</button>
-        </center>
-
+        
+    </form>
+</center>
         <!-- Footer -->
 <footer class="bg-dark text-light pt-5 pb-3">
   <div class="container">
