@@ -12,7 +12,9 @@ urlpatterns=[
     path('signup',views.signup,name='signup'),
     path('about',views.about,name='about'),
     path('contact',views.contact,name='contact'),
-    path('service',views.service,name='service')
+    path('service',views.service,name='service'),
+    path('result',views.result,name='result'),
+    path('edit',views.edit,name='edit')
 
 
 ]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT);

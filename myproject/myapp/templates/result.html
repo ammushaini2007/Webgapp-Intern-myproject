@@ -1,41 +1,29 @@
 {% load static %}
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars</title>
+</head>
 
-<!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap JS Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="{% static 'assets/css/regform.css' %}">
-    </head>
+    <link rel="stylesheet" href="{% static 'assets/css/service.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 <style>
-        label{
-            margin-left: 400px;
-            width:200px;
-            display:inline-block;
-        }
-        #form{
-            border-radius: -20px;
-            margin: 55px;
-            padding: 48px;
+  body{
+    background-image: url("../static/assets/img/service.jpg");
+    background-repeat: repeat;
 
-        }
-        
-        #ammu{
-    background-image:url("../static/assets/img/contact.jpg")
-  }
+}
+
 </style>
-
-
-<div id="ammu">
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <body>
+      
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <h1 style="font-style: italic;color: black;">MARS</h1>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,7 +33,7 @@
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">&nbsp;&nbsp;&nbsp;
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="width:350px;"><button class="btn btn-outline-success" type="submit">Search</button>
       </ul>
-            <i class="fa-solid fa-moon"></i>&nbsp;&nbsp;
+      <i class="fa-solid fa-moon"></i>&nbsp;&nbsp;
           <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Home</a>
           <a class="nav-link active" aria-current="page" href="{% url 'forms' %}">Forms</a>
           <a class="nav-link active" aria-current="page" href="{% url 'about' %}">About</a>
@@ -60,56 +48,49 @@
     </div>
   </div>
 </nav>
-</div><br><br>
-        <h1 style="color:black; text-align: center;">STUDENT REGISTRATION FORM</h1>
-    <form id="form" method="POST">
-        {% csrf_token %}
-        <label>ROLL NUMBER</label>
-        <input type="number" name="number" id="ROLL NUMBER:"><br>
-        <label>STUDENT NAME</label>
-        <input type="text" name="name" id="first name">
-        <br>
-        <label>FATHER NAME</label>
-        <input type="text" name="father" id="name"><br>
-        <label>DATE OF BIRTH</label>
-        <input type="date" name="dob" id="date"><br>
-        <label>MOBILE NUMBER</label>
-        <input type="number" name="mobile" id="number"><br>
-        
-        <label>EMAIL ID</label>
-        <input type="email" name="email" id="email"><br>
-        <label>Password</label>
-        <input type="password" name="password" id="password"><br>
-        <label>CITY</label>
-        <input type="text" name="city" id="text"><br>
-        <label>ADDRESS</label>
-        <textarea name="address"></textarea>
-        <label>Gender</label>
-        <select>
-            <option value="MALE">MALE</option>
-            <option value="FEMALE" name="Gender">FEMALE</option>
-        </select><br>
-        
-        <label>DEPARTMENT</label>
-        <input type="button" id="DEPARTMENT">AI&DS
-        <input type="checkbox" id="DEPARTMENT">MECH
-        <input type="radio" name="department" id="DEPARTMENT">EEE<br>
-        <!--<label>COURSE</label>
-        <select>
-            <option value="AI&DS">AI&DS</option>
-            <option value="MECH">MECH</option>
-            <option value="EEE">EEE</option>
-        </select><br>
-        <label>STUDENT PHOTO</label>
-        <input type="file" id="file"><br>-->
-        
-        
-        <br>
-        <center>
-        <button type="submit">SUBMIT</button>
-        </center>
-    </form>  
-  <!-- Footer -->
+<div style="min-height: 100vh;">
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">S.No</th>
+      <th scope="col">NAME</th>
+      <th scope="col">ROLL NUMBER</th>
+      <th scope="col">DOB</th>
+      <th scope="col">FATHER NAME</th>
+      <th scope="col">MOBILE NUMBER</th>
+      <th scope="col">EMAIL</th>
+      <th scope="col">PASSWORD</th>
+      <th scope="col">CITY</th>
+      <th scope="col">ADDRESS</th>
+      <th scope="col">DEPARTMENT</th>
+      <th scope="col">GENDER</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    {% for i in result %}
+    <tr>
+      <th scope="row">1</th>
+      
+    <td>{{i.name}}</td>
+      <td>{{i.number}}</td>
+      <td>{{i.dob}}</td>
+      <td>{{i.father}}</td>
+      <td>{{i.mobile}}</td>
+      <td>{{i.email}}</td>
+      <td>{{i.password}}</td>
+      <td>{{i.city}}</td>
+      <td>{{i.address}}</td>
+      <td>{{i.department}}</td>
+      <td>{{i.Gender}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table><br><br>
+</div>
+
+
+<!-- Footer -->
 <footer class="bg-dark text-light pt-5 pb-3">
   <div class="container">
     <div class="row">
